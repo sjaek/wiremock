@@ -120,6 +120,7 @@ task jarAll(type: Jar, dependsOn: jar) {
                 rule pattern: "org.json.**", result: "wiremock.org.json.@1"
                 rule pattern: "net.minidev.**", result: "wiremock.net.minidev.@1"
                 rule pattern: "com.jayway.**", result: "wiremock.com.jayway.@1"
+				zap pattern: "javax.servlet.**"
             }
         }
         
